@@ -649,27 +649,35 @@
       </div>
     </div>
     <script>
+      
       var textColor = document.querySelectorAll(".side-text");
+      var container = document.getElementById("container");
+      
+      container.style.background = "linear-gradient(60deg, pink, rgba(130, 130, 242, 0.597))";
+      
       function blue() {
         document.getElementById("haljina").style.fill = "deepskyblue";
         document.getElementById("rukav1").style.fill = "deepskyblue";
         document.getElementById("rukav2").style.fill = "deepskyblue";
-        textColor.style = "deepskyblue";
+        container.style.background = "linear-gradient(60deg, deepskyblue, rgba(130, 130, 242, 0.597))";
       }
       function pink() {
         document.getElementById("haljina").style.fill = "pink";
         document.getElementById("rukav1").style.fill = "pink";
         document.getElementById("rukav2").style.fill = "pink";
+        container.style.background = "linear-gradient(60deg, pink, rgba(130, 130, 242, 0.597))";
       }
       function red() {
         document.getElementById("haljina").style.fill = "#aa85a0";
         document.getElementById("rukav1").style.fill = "#aa85a0";
         document.getElementById("rukav2").style.fill = "#aa85a0";
+        container.style.background = "linear-gradient(60deg, #aa85a0, rgba(130, 130, 242, 0.597))";
       }
       function chocolate() {
         document.getElementById("haljina").style.fill = "chocolate";
         document.getElementById("rukav1").style.fill = "chocolate";
         document.getElementById("rukav2").style.fill = "chocolate";
+        container.style.background = "linear-gradient(60deg, chocolate, rgba(130, 130, 242, 0.597))";
       }
     </script>
   </body>
