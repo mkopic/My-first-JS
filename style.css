@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: b;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+#container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(60deg, pink, rgba(130, 130, 242, 0.597));
+}
+h1 {
+  max-width: 600px;
+  margin: auto;
+  padding: 30px 0;
+  text-align: center;
+  font-family: "Marck Script", cursive;
+  font-size: 48px;
+}
+
+.row {
+  width: 100%;
+  height: auto;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+}
+.col-left {
+  flex-basis: 100%;
+  max-width: 450px;
+  display: grid;
+  margin: 0;
+  place-items: center;
+}
+.img {
+  width: 100%;
+  height: auto;
+}
+.col-right {
+  flex-basis: 30%;
+  position: relative;
+  margin-left: 50px;
+}
+.wraper {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+}
+.col-right h2 {
+  font-size: 20px;
+  text-align: center;
+}
+.color-btn {
+  max-width: 300px;
+  margin: auto;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+}
+.color {
+  width: 30px;
+  height: 30px;
+  margin: 20px auto;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.color:hover {
+  transform: scale(1.1);
+}
+.blue {
+  background-color: deepskyblue;
+}
+.pink {
+  background-color: pink;
+}
+.red {
+  background-color: #aa85a0;
+}
+.chocolate {
+  background-color: chocolate;
+}
+
+.side-text {
+  min-width: 0px;
+  height: 100%;
+  background: transparent;
+  margin-right: 5px;
+  font-size: 20px;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.color-box {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 20px auto;
+  background-color: coral;
+}
+
+.color-box:hover .side-text {
+  min-width: 140px;
+}
+@media screen and (max-width: 400px) {
+  .col-right {
+    flex-basis: 100%;
+    margin-left: 5px;
+  }
+}
